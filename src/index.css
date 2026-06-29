@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.22), transparent 28rem),
+    radial-gradient(circle at 82% 18%, rgba(251, 113, 133, 0.18), transparent 24rem),
+    linear-gradient(135deg, #f8fafc 0%, #eff6ff 42%, #f0fdf4 100%);
+  color: #0f172a;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(20, 184, 166, 0.2), transparent 28rem),
+    radial-gradient(circle at 80% 15%, rgba(244, 63, 94, 0.15), transparent 25rem),
+    linear-gradient(135deg, #0b1120 0%, #111827 48%, #10201d 100%);
+  color: #f8fafc;
+}
+
+@layer components {
+  .glass-panel {
+    @apply rounded-lg border border-white/60 bg-white/70 shadow-soft backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/50;
+  }
+
+  .tool-card {
+    @apply rounded-lg border border-slate-200/80 bg-white/90 shadow-soft backdrop-blur-md transition duration-200 dark:border-white/10 dark:bg-slate-950/70;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-500;
+  }
+}
+
+@media (prefers-contrast: more) {
+  body,
+  .dark body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .dark body {
+    background: #000000;
+    color: #ffffff;
+  }
+
+  .glass-panel,
+  .tool-card {
+    border-color: currentColor;
+    box-shadow: none;
+  }
+}

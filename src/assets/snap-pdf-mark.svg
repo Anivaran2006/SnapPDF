@@ -1,0 +1,9 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">SnapPDF logo mark</title>
+  <rect x="10" y="8" width="54" height="70" rx="8" fill="#14B8A6"/>
+  <path d="M64 8L82 26V78C82 83.5228 77.5228 88 72 88H34C28.4772 88 24 83.5228 24 78V18C24 12.4772 28.4772 8 34 8H64Z" fill="#F8FAFC"/>
+  <path d="M64 8V24C64 26.2091 65.7909 28 68 28H82" fill="#E0F2FE"/>
+  <rect x="34" y="38" width="38" height="6" rx="3" fill="#0F766E"/>
+  <rect x="34" y="50" width="28" height="6" rx="3" fill="#38BDF8"/>
+  <rect x="34" y="62" width="34" height="6" rx="3" fill="#FB7185"/>
+</svg>

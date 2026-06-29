@@ -1,0 +1,29 @@
+{
+  "name": "snappdf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A privacy-first browser app for converting images to PDF and PDF pages to images.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "file-saver": "^2.0.5",
+    "framer-motion": "^11.18.2",
+    "jszip": "^3.10.1",
+    "lucide-react": "^0.468.0",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
+}
